@@ -69,10 +69,11 @@ Step 2: Setup Postgresql:
     CREATE DATABASE assessment;
 
 Step 3: Set Up Kafka:
-    Start Zookeeper: bin/zookeeper-server-start.sh config/zookeeper.properties
-    Start Kafka: bin/kafka-server-start.sh config/server.properties
-    Start Producer: 
-
+    Start Zookeeper: 
+    bin/zookeeper-server-start.sh config/zookeeper.properties
+    
+    Start Kafka: 
+    bin/kafka-server-start.sh config/server.properties
 
 Step 4: Configure application properties
     spring.datasource.url=jdbc:postgresql://localhost:5432/assessment
